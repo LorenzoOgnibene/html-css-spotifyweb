@@ -16,6 +16,8 @@ header{
 
 
 main{
+    height: calc(100vh - 110px);
+    overflow-y: auto;
     flex-grow: 1;
     background-color: #141922;
 }
@@ -27,9 +29,7 @@ footer{
 }
 
 .container{
-    width: 100%;
-    margin: 0 auto;
-    
+    width: 100%;  
 }
 
 
@@ -50,20 +50,28 @@ footer{
 
 .recently{
     width: calc(100vw - 55px);    
-}
-
-.recent{
-    flex-wrap: wrap;
-}
-
-.disc{
-   width: 200px;
-   height: 200px;
-   background-color: #a970ff; 
-   margin: 0.5rem;
     
 }
 
+.discs{
+    flex-wrap: wrap;
+    width: 100%;
+    padding: .5rem;
+}
+
+.disc{
+   width: calc((100% / 2) - 1rem);
+   height: 180px;
+   background-color: #a970ff; 
+   margin: 0.5rem;
+}
+
+
+/* SECTION FOR YOU */
+
+.for-you{
+    margin: 5rem 0;
+}
 
 
 @media all and (min-width: 576px){
@@ -75,9 +83,14 @@ footer{
     }
 
     .recently{
-        
         width: calc(100vw - 233px);    
     }
+
+    .disc{
+        height: 160px;
+    }
+
+    
 }
 
 
@@ -86,27 +99,34 @@ footer{
          background-color: rebeccapurple; /* TEST */
     }
 
-    /* .disc{
+    .disc{
         width: calc((100% / 4) - 1rem);
         background-color: aqua;
-    } */
+    } 
 }
 
 
 @media all and (min-width: 992px){
 
     .container{
-        max-width: 1550px;
+        max-width: 1600px;
     }
 
     header{
         background-color: yellowgreen; /* TEST */
     }
 
-    /* .disc{
-        width: calc((100% / 6) - 1rem);
+    .disc{
+        margin: 1rem;
+        width: calc((100% / 6) - 2rem);
         background-color: aqua;
-    } */
+    } 
+
+    .disc{
+        height: 200px;
+    }
+
+
 }
 
 
