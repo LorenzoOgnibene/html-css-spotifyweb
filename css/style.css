@@ -21,8 +21,8 @@ header{
 
 main{
     height: calc(100vh - 110px);
+    width: calc(100% - 60px);
     overflow-y: auto;
-    flex-grow: 1;
     background-color: #141922;
 }
 
@@ -39,6 +39,14 @@ a{
 
 ul{
     list-style-type: none;
+}
+
+.c-white{
+    color: white;
+}
+
+.grey-text{
+    color: #666a72;
 }
 
 .container{
@@ -74,26 +82,44 @@ ul{
     padding-top: .5rem;
 }
 
-.menu ul p{
+hr,
+.user p,
+.playlists,
+.header-nav ul p{
     display: none;
 }
 
+.user,
 .menu ul{
     text-align: center;
 }
 
+.user ul li,
 .menu ul li{
     margin: .8rem 0;
 }
+
 
 .menu i{
     color: #a8acb4;
     font-size: 1.25rem;
 }
 
+.user{
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
+.user img{
+    width: 25px;
+}
 
-
+#circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: grey;
+}
 
 /* SECTION MAIN TOP BAR */
 
@@ -129,10 +155,6 @@ ul{
 }
 
 /* SECTION RECENTLY PLAYED */
-
-.recently{
-    width: calc(100vw - 60px);    
-}
 
 .cat-title{
     margin: 1rem .8rem;
@@ -186,10 +208,13 @@ p{
 
 @media all and (min-width: 576px){
     
+    main{
+        width: calc(100% - 233px);
+    }
 
     header{
         width: 233px;
-        background-color: crimson; /* TEST */
+        
     }
 
     .header-nav .logo{
@@ -208,20 +233,54 @@ p{
         vertical-align: bottom;
     }
 
- 
+    .user,
+    .menu ul{
+        text-align: left;
+        margin: 2rem 1.2rem 0 1.2rem;
+    }
 
+    .menu ul p{
+        display: inline-block;
+    }
 
-    .recently{
-        width: calc(100vw - 233px);    
+    .menu li:first-child p{
+        color: white;
+    }
+
+    hr,
+    .playlists{
+        display: block;
+    }
+
+    .grey-text{
+        font-size: 1.2rem;
+    }
+
+    .playlists ul li{
+        margin: .8rem .8rem;
+    }
+    
+    .playlists li h3{
+        color: white;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+
+    .playlists li i{
+        color: #666a72;
+        vertical-align: middle;
+        margin-right: 0.5rem;   
+    }
+
+    .user p{
+        display: inline-block;
+        vertical-align: super;
+        font-size: 1.2rem;    
     }
 }
 
 
 @media all and (min-width: 768px){
-    header{
-         background-color: rebeccapurple; /* TEST */
-    }
-
     .disc{
         width: calc((100% / 4) - 1.6rem);
         
@@ -235,18 +294,10 @@ p{
         max-width: 1600px;
     }
 
-    header{
-        background-color: yellowgreen; /* TEST */
-    }
-
     .disc{
         margin: 1rem;
         width: calc((100% / 6) - 2rem);
     } 
-
-
-
-
 }
 
 
