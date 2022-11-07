@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /******* MOBILE FIRST *******/
 
@@ -28,6 +31,11 @@ footer{
     background-color: #282828;
 }
 
+a{
+    text-decoration: none;
+    color: #666a72;
+}
+
 .container{
     width: 100%;  
 }
@@ -43,27 +51,70 @@ footer{
     width: 100%;
     height: 85px;
     background-color: #080b12;
+    text-align: end;
+    padding: 1.5rem .5rem;
 }
 
+#upgrade-button{
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    
+}
+
+/* SECTION CATEGORIES */
+
+.list ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 2.6;
+}
+
+.list ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 .8rem;
+}
 
 /* SECTION RECENTLY PLAYED */
 
 .recently{
     width: calc(100vw - 55px);    
-    
+}
+
+.recently h2{
+    color: white;
+    font-size: 1.8rem;
+    margin: 1rem .8rem;
 }
 
 .discs{
     flex-wrap: wrap;
     width: 100%;
-    padding: .5rem;
 }
 
 .disc{
-   width: calc((100% / 2) - 1rem);
-   height: 180px;
-   background-color: #a970ff; 
-   margin: 0.5rem;
+   width: calc((100% / 2) - 1.6rem);
+   text-align: center;
+   margin: .2rem .8rem;
+}
+
+.album-img img{
+    max-width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.album-description h3{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.album-description p{
+    color: #666a72;
 }
 
 
@@ -86,9 +137,7 @@ footer{
         width: calc(100vw - 233px);    
     }
 
-    .disc{
-        height: 160px;
-    }
+
 
     
 }
@@ -100,8 +149,8 @@ footer{
     }
 
     .disc{
-        width: calc((100% / 4) - 1rem);
-        background-color: aqua;
+        width: calc((100% / 4) - 1.6rem);
+        
     } 
 }
 
@@ -119,12 +168,9 @@ footer{
     .disc{
         margin: 1rem;
         width: calc((100% / 6) - 2rem);
-        background-color: aqua;
     } 
 
-    .disc{
-        height: 200px;
-    }
+
 
 
 }
