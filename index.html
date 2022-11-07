@@ -7,13 +7,30 @@
         <title>Spotify Web</title>
 
         <link rel="stylesheet" href="./css/style.css">
-        
+    
+        <!-- IMPORT FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     </head>
 
     <body>
         <div class="flex">
-            <header>
-
+            <header class="flex">
+                <div class="header-nav flex">
+                    <div class="logo">
+                        <img src="./img/favicon.ico" alt="">
+                        <h1>Spotify</h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i> <p>Home</p></li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i> <p>Cerca</p></li>
+                            <li><i class="fa-solid fa-lines-leaning"></i> <p>La tua libreria</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="playlists">
+                </div>
+                <div class="user"></div>
             </header>
 
             <main>
@@ -35,7 +52,9 @@
                         </div>
                 </section>
                 <section class="recently container">
-                    <h2>Recent played</h2>
+                    <div class="cat-title">
+                        <h2>Recent played</h2>
+                    </div>
                     <div class="recent discs flex">
                         <div class="disc">
                             <div class="album-img">
@@ -95,15 +114,53 @@
                     
                 </section>
                 <section class="for-you container">
-                    <div class="for-you-mix discs flex">
-                        <div class="disc"></div>
-                        <div class="disc"></div>
+                    <div class="cat-title">
+                        <h2>Creato per Riccardo Petricca</h2>
                     </div>
+                    <div class="for-you-mix discs flex">
+                        <div class="disc">
+                            <div class="album-img">
+                                <img src="./img/radar.jpeg" alt="">
+                            </div>
+                            <div class="album-description">
+                                <h3>Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="disc">
+                            <div class="album-img">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                            </div>
+                            <div class="album-description">
+                                <h3>Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
                 </section>
                 <section class="popular container">
+                    <div class="cat-title">
+                        <h2>Artisti più popolari</h2>
+                        <p>Più ascolti più accurati saranno i suggerimenti</p>
+                    </div>
                     <div class="popular-artists discs flex">
-                        <div class="disc"></div>
-                        <div class="disc"></div>
+                        <div class="disc">
+                            <div class="album-img">
+                                <img src="./img/youg.jpeg" alt="">
+                            </div>
+                            <div class="album-description">
+                                <h3>Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="disc">
+                            <div class="album-img">
+                                <img src="./img/einaudi.jpeg" alt="">
+                            </div>
+                            <div class="album-description">
+                                <h3>Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
