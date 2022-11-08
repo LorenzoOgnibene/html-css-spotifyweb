@@ -24,6 +24,7 @@ main{
     width: calc(100% - 60px);
     overflow-y: auto;
     background-color: #141922;
+    
 }
 
 footer{
@@ -99,7 +100,6 @@ hr,
     margin: .8rem 0;
 }
 
-
 .menu i{
     color: #a8acb4;
     font-size: 1.25rem;
@@ -127,8 +127,8 @@ hr,
     width: 100%;
     height: 85px;
     background-color: #080b12;
-    text-align: end;
     padding: 1.5rem .5rem;
+    text-align: end;
 }
 
 #upgrade-button{
@@ -138,10 +138,10 @@ hr,
     padding: .5rem 2rem;
     border-radius: 1.5rem;
     font-weight: bold;
-    
 }
 
 /* SECTION CATEGORIES */
+
 
 .list ul{
     text-align: center;
@@ -192,11 +192,6 @@ p{
 }
 
 
-
-/* SECTION FOR YOU */
-
-
-
 /* POPULAR ARTISTS */
 
 .popular-artists img{
@@ -205,6 +200,73 @@ p{
 }
 
 
+/* FOOTER */
+
+.player{
+    height: 100%;
+    justify-content: space-between;
+}
+
+.song-in-playing,
+.set-device{
+    width: 25%;
+}
+
+.player-function{
+    width: 50%;
+    justify-content: center;
+}
+
+.img-song{
+    height: 100%;
+    align-items: center;
+}
+
+.img-song img{
+    height: 40%;
+    margin: 0 .8rem;
+}
+
+.song-title h4{
+    color: white;
+    font-size: 1.1rem;
+}
+.favourite span{
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 .8rem;
+}
+
+.function-player{
+    padding-top: .5rem;
+}
+
+.function-player span{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+}
+
+.fa-circle-play{
+    margin: 0 1rem;
+}
+
+.bar{
+    width: 40%;
+    height: 10px;
+    background-color: grey;
+}
+
+.set-device{
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.set-device span{
+    font-size: 1.1rem;
+    color: white;
+    margin: 0 .3rem;
+}
 
 @media all and (min-width: 576px){
     
@@ -282,8 +344,7 @@ p{
 
 @media all and (min-width: 768px){
     .disc{
-        width: calc((100% / 4) - 1.6rem);
-        
+        width: calc((100% / 4) - 1.6rem);  
     } 
 }
 
@@ -291,7 +352,7 @@ p{
 @media all and (min-width: 992px){
 
     .container{
-        max-width: 1600px;
+        max-width: 1800px;
     }
 
     .disc{
