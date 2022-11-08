@@ -46,10 +46,6 @@ ul{
     color: white;
 }
 
-.grey-text{
-    color: #666a72;
-}
-
 .container{
     width: 100%;  
 }
@@ -58,6 +54,36 @@ ul{
 .flex{
     display: flex;
 }
+
+.p-relative{
+    position: relative;
+}
+
+/* HOVER */
+
+
+li:hover .fa-solid,
+a:hover{
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.album-img:hover .hover-button{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.album-img:hover img{
+    opacity: 60%;
+}
+
 
 /* SECTION HEADER */
 
@@ -86,7 +112,7 @@ ul{
 hr,
 .user p,
 .playlists,
-.header-nav ul p{
+.header-nav ul span{
     display: none;
 }
 
@@ -138,6 +164,7 @@ hr,
     padding: .5rem 2rem;
     border-radius: 1.5rem;
     font-weight: bold;
+    margin-right: 0.8rem;
 }
 
 /* SECTION CATEGORIES */
@@ -178,6 +205,10 @@ p{
    width: calc((100% / 2) - 1.6rem);
    text-align: center;
    margin: .2rem .8rem;
+}
+
+.hover-button{
+    display: none;
 }
 
 .album-img img{
@@ -232,8 +263,8 @@ p{
     font-size: 1.1rem;
 }
 .favourite span{
-    color: white;
-    font-size: 1.3rem;
+    color: rgb(175, 170, 170);
+    font-size: 1rem;
     margin: 0 .8rem;
 }
 
@@ -243,12 +274,12 @@ p{
 
 .function-player span{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 .5rem;
 }
 
 .fa-circle-play{
-    margin: 0 1rem;
+    margin: 0 .8rem;
 }
 
 .bar{
@@ -301,12 +332,13 @@ p{
         margin: 2rem 1.2rem 0 1.2rem;
     }
 
-    .menu ul p{
+    .menu ul span{
         display: inline-block;
     }
 
-    .menu li:first-child p{
+    .menu li:first-child span{
         color: white;
+
     }
 
     hr,
